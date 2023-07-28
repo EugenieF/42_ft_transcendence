@@ -1,3 +1,5 @@
+![42](images/42Project.png "42")
+
 # 42_ft_transcendence
 
 Link to group repository : [ft_transcendence](https://github.com/the-5-pong-heroes/transcendence)
