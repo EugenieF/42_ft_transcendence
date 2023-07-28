@@ -44,8 +44,8 @@ The application is built using the following technologies:
 
 To run the application locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/your-repo.git`
-2. Navigate to the project directory: `cd your-repo`
+1. Clone the repository: `git clone git@github.com:EugenieF/42_ft_transcendence.git`
+2. Navigate to the project directory: `cd 42_ft_transcendence`
 3. Build the project using the 'make' command.
 4. Access the application in your browser at `http://localhost:5173`.
 
