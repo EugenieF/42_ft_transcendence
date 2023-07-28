@@ -1,4 +1,4 @@
-![42](images/42Project.png "42")
+![42](docs/image/42Project.png "42")
 
 # ft_transcendence
 
