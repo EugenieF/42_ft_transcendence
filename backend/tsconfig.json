@@ -1,0 +1,70 @@
+// ################################## BACKEND #################################
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  // patterns to include in the program
+  "include": ["src/*", "test/*"],
+  // TypeScript’s configuration & how the language should work
+  "compilerOptions": {
+    "paths": {
+      "shared/*": ["../shared/*"]
+    },
+    // which JS to use (the more recent, the less compatible)
+    "target": "ESNext",
+    // JS is allowed because class-validator is written in JS
+    "allowJs": true,
+    // allows importing modules with a .json extension
+    "resolveJsonModule": false,
+    // generates .d.ts files for every TypeScript file of the project
+    "declaration": true,
+    // strips all comments from TypeScript files
+    "removeComments": true,
+    // support for emitting type metadata for decorators
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    // allows you to write: import React from "react" for instance
+    "allowSyntheticDefaultImports": true,
+    // sourcemap files allow debuggers to display the original TS
+    "sourceMap": true,
+    // save information about the project graph from the last compilation
+    "incremental": false,
+    // stronger guarantees of program correctness
+    "strict": true,
+    // TS won't raise an error when a class property isn't set in the constructor
+    // indeed DTO classes do not have constructors
+    "strictPropertyInitialization": false,
+    // null and undefined have their own distinct types
+    "strictNullChecks": true,
+    // call, bind, apply should be invoked with correct argument
+    "strictBindCallApply": true,
+    // functions parameters are checked more correctly
+    "strictFunctionTypes": true,
+    // TS will issue an error whenever it would have inferred ‘any’
+    "noImplicitAny": true,
+    // raises error on ‘this’ expressions with an implied ‘any’ type
+    "noImplicitThis": true,
+    // mimics a case-sensitive file system (for Windows & mac OS)
+    "forceConsistentCasingInFileNames": true,
+    // switch cases should include either [break] or [return]
+    "noFallthroughCasesInSwitch": true,
+    // raises an error when a piece of code will never be executed
+    "allowUnreachableCode": false,
+    // warning when you write code that can’t be interpreted by some transpilers
+    "isolatedModules": true,
+    // https://www.typescriptlang.org/tsconfig#useDefineForClassFields
+    "useDefineForClassFields": true,
+    // slower but more type-system accurate
+    "skipLibCheck": false,
+    // base directory to resolve non-absolute module names
+    "baseUrl": "./",
+    // includes a set of type definitions for built-in JS APIs
+    "lib": ["ESNext", "dom"],
+    // sets the module system for the program
+    "module": "commonjs",
+    // files will be emitted into this directory
+    "outDir": "./dist",
+    // https://www.typescriptlang.org/tsconfig#esModuleInterop
+    "esModuleInterop": false,
+    // specify the module resolution strategy
+    "moduleResolution": "node"
+  }
+}

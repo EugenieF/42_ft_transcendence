@@ -1,0 +1,23 @@
+/* .game-modal {
+  flex-direction: column;
+  position: absolute;
+} */
+
+.quit-text {
+  margin-top: 30px;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 200;
+  letter-spacing: 0.05rem;
+}
+
+@media (max-width: 600px) {
+  .quit-text {
+    font-size: 3vw;
+  }
+
+  .modal-quit {
+    height: 25vw;
+    width: 60vw;
+  }
+}

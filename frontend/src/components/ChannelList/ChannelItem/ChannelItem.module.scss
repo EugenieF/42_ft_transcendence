@@ -1,0 +1,37 @@
+.ChannelItem {
+  width: 230px;
+  height: 100px;
+  border-radius: 10px;
+  cursor: pointer;
+  flex-shrink: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  margin: 10px;
+  padding: 10px;
+  overflow: hidden;
+
+  .Name {
+    font-weight: bold;
+  }
+}
+
+.ChannelItemLight {
+  &:hover {
+    background-color: rgba(255, 255, 255, .1);
+  }
+
+  &.ActiveItem {
+    background-color: rgba(255, 255, 255, .2);
+  }
+}
+
+.ChannelItemDark {
+  &:hover {
+    background-color: rgba(0, 0, 0, .1);
+  }
+
+  &.ActiveItem {
+    background-color: rgba(0, 0, 0, .2);
+  }
+}

@@ -1,0 +1,202 @@
+.Leaderboard {
+  position: absolute;
+  top: 0;
+  left: calc((548vh - 100vw) / 4 * 2);
+  z-index: 8;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  animation: fadeInAnimation ease 500ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.scroll-div {
+  max-height: 60vh;
+  overflow: auto;
+  scrollbar-color: darkblue lightblue;
+  scrollbar-width: thin;
+}
+
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  border-radius: 20px;
+  background: linear-gradient(0deg, rgba(42, 45, 112, 0.5) 0%, rgba(80, 75, 210, 0.5) 100%);
+  margin-bottom: 0.8rem;
+  padding: 1rem;
+  width: 82vw;
+  max-width: 1000px;
+  min-width: 775px;
+}
+
+#light .row {
+  background: linear-gradient(0deg, #b3d9fa97 0%, #85b4e7a1 100%);
+}
+
+.row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-top: var(--bs-gutter-y);
+}
+
+.col {
+  align-self: center;
+  flex: 1 0 0%;
+  text-align: center;
+}
+
+.col.status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+  align-self: center;
+  text-transform: lowercase;
+}
+
+.firstRow {
+  font-weight: 600;
+  font-size: 1.1rem;
+  background: linear-gradient(0deg, #504bd2 0%, rgba(80, 75, 210, 0.5) 100%) !important;
+  display: flex;
+  justify-content: space-around;
+}
+
+#light .firstRow {
+  background: linear-gradient(0deg, #8db8f9 0%, rgba(145, 190, 249, 0.5) 100%) !important;
+}
+
+.row.me {
+  border: 2px solid #ffffff;
+}
+
+#light .row.me {
+  border: 2px solid #011f37;
+}
+
+.row:not(.firstRow) {
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+:not(.firstRow) > .col:first-child > img {
+  width: 60px;
+}
+
+.row .col:last-child,
+.row .col:nth-last-child(2) {
+  font-size: 1.1rem;
+}
+
+.friend {
+  color: green;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.not-friend {
+  color: #011f37;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.link-prof:hover {
+  cursor: pointer;
+  color: #011f37;
+  font-weight: 500;
+}
+
+#light .link-prof:hover {
+  color: #ffffff;
+}
+
+.col.level {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  align-self: center;
+}
+
+@media (max-width: 1080px) {
+  .col.level span,
+  .friends {
+    display: none;
+  }
+  .firstRow,
+  .row .col:last-child {
+    font-weight: 550;
+    font-size: 1rem;
+  }
+  .row:not(.firstRow) {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .col.wins,
+  .col.defeats,
+  .status-text {
+    display: none;
+  }
+}
+
+@media (max-width: 680px) {
+  .col.status {
+    display: none;
+  }
+  .firstRow,
+  .row .col:last-child {
+    font-weight: 530;
+    font-size: 0.9rem;
+  }
+  :not(.firstRow) > .col:first-child > img {
+    width: 45px;
+  }
+}
+
+@media (max-width: 520px) {
+  .firstRow,
+  .row .col:last-child {
+    font-weight: 500;
+    font-size: 0.8rem;
+  }
+  .col.score {
+    display: none;
+  }
+  .col.name {
+    font-size: 0.8rem;
+  }
+  .firstRow > * {
+    padding: 0rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .col.level,
+  .col.avatar {
+    display: none;
+  }
+}

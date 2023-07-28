@@ -1,0 +1,115 @@
+.ChannelType {
+  width: 150px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 20px;
+  color: black;
+
+  .ChannelTypeOptions {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    gap: 10px;
+	border-radius: 8px;
+	padding: 10px;
+
+    .Type {
+      cursor: pointer;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      gap: 10px;
+      padding: 10px;
+      border-radius: 7px;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, .4);
+      }
+    }
+
+    .ActiveType {
+      outline: 2px solid black;
+    }
+      
+    .TypeNotOwner {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      gap: 10px;
+      padding: 10px;
+      border-radius: 7px;
+      color: black;
+      }
+
+    .TypeIcon {
+      width: 30px;
+      height: 30px;
+      background-size: contain;
+    }
+  }
+    
+  .Password {
+    position: relative;
+
+    .PasswordInput {
+      height: 25px;
+      padding: 8px;
+      border-radius: 12px;
+      border: none;
+      outline: none;
+    }
+
+    .PasswordIcon {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      top: 3px;
+      right: 10px;
+      cursor: pointer;
+      background-size: contain;
+    }
+  }
+
+  .Button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 1px 2px 5px -3px black;
+  }
+}
+
+.ChannelTypeLight {
+  .ChannelTypeOptions {
+    background-color: rgba(255, 255, 255, .2);
+  }
+
+  .Button {
+    background-color: rgba(255, 0, 38, .9);
+  }
+}
+
+.ChannelTypeDark {
+  .ChannelTypeOptions {
+    background-color: rgba(0, 0, 0, .2);
+  }
+
+  .Type {
+    filter: invert(1);
+  }
+
+  .ActiveType {
+    filter: invert(1);
+  }
+
+  .TypeNotOwner {
+    filter: invert(1);
+  }
+  
+  .Button {
+    background-color: rgba(227, 24, 54, .9);
+  }
+}
