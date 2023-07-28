@@ -13,6 +13,18 @@ This is a full-stack web application developed using Nest.js and React. It provi
 - **Settings**: Configure and update user account settings.
 - **Login**: Register with your 42 account, Google account, or create an account using your email.
 
+![plan](img/login.png "login")
+
+![cones](img/home.png "home")
+
+![checker](img/game.png "game")
+
+<p align="center">
+    <img src="./img/login.png" alt="login" width=30%>
+    <img src="./img/home.png" alt="home" width=30%>
+    <img src="./img/game.png" alt="game" width=30%>
+</p>
+
 ## Technologies Used
 
 The application is built using the following technologies:
