@@ -13,16 +13,9 @@ This is a full-stack web application developed using Nest.js and React. It provi
 - **Settings**: Configure and update user account settings.
 - **Login**: Register with your 42 account, Google account, or create an account using your email.
 
-![plan](img/login.png "login")
-
-![cones](img/home.png "home")
-
-![checker](img/game.png "game")
-
 <p align="center">
-    <img src="./img/login.png" alt="login" width=30%>
-    <img src="./img/home.png" alt="home" width=30%>
-    <img src="./img/game.png" alt="game" width=30%>
+    <img src="./docs/image/login.png" alt="login" width=50%>
+    <img src="./docs/image/home.png" alt="home" width=50%>
 </p>
 
 ## Technologies Used
@@ -34,6 +27,11 @@ The application is built using the following technologies:
 - **Authentication**: JWT (JSON Web Tokens), OAuth (42 Login, Google Login)
 - **Websockets**: Socket.IO for real-time communication
 
+<p align="center">
+    <img src="./docs/image/game.png" alt="game" width=50%>
+    <img src="./docs/image/leaderboard.png" alt="leaderboard" width=50%>
+</p>
+
 ## Getting Started
 
 To run the application locally, follow these steps:
@@ -44,3 +42,11 @@ To run the application locally, follow these steps:
 4. Access the application in your browser at `http://localhost:5173`.
 
 Make sure you have the necessary software and tools installed, such as Docker and docker compose, before running the application.
+
+<p align="center">
+    <img src="./docs/video/transcendence1.gif" alt="transcendence_part1" width=50%>
+</p>
+
+<p align="center">
+    <img src="./docs/video/transcendence2.gif" alt="transcendence_part2" width=50%>
+</p>
